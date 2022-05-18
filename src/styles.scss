@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    // background-color: lightgreen;
+}
+@import '~@angular/material/theming';
+@include mat-core();
+
+    $primary: mat-palette($mat-gray,900);
+    $accent: mat-palette($mat-gray,200);
+    
+    $theme: mat-light-theme($primary, $accent);
+
+    // $background-color: map_get($mat-blue-grey, 900);
+
+    // $background: map-get($theme, background);
+    // $background: map_merge($background, (background: $background-color));
+    // $theme: map_merge($theme, (background: $background));
+
+
+
+@include angular-material-theme($theme);
+
+$dark-primary: mat-palette($mat-gray,900);
+$dark-accent: mat-palette($mat-gray,800);
+
+$dark-theme: mat-dark-theme($dark-primary, $dark-accent);
+
+.material-dark-theme {
+    @include angular-material-theme($dark-theme);
+  }
+
