@@ -15,12 +15,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HeaderComponent } from './core/header/header.component';
 import { MatCardModule } from '@angular/material/card';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AboutComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
