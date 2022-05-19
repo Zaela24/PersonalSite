@@ -8,12 +8,11 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
+  title: string = 'About Me'
+
   constructor(
     private readonly router: Router
     ) {}
-
-  title: string = 'About Me'
-  activeLink: string = '/'
 
   ngOnInit(): void {
   }
