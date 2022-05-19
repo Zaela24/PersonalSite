@@ -1,5 +1,9 @@
 # PersonalSite
 
+![Screenshot of site 1](./src/assets/img/Screenshot_20220518_191644.png)
+![Screenshot of site 2](./src/assets/img/Screenshot_20220518_191730.png)
+![Screenshot of site 3](./src/assets/img/Screenshot_20220518_191832.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
 ## Development server
