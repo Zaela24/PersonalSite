@@ -22,7 +22,7 @@ Nature is something I really love interacting with; I actually\
  in high school and worked in the 880 acre arboretum when I was\
  attending Carleton.\n\n\I ended up with a psychology major and\
  computer science minor from the University of Minnesota. I wanted to\
- go into consouling psych, but decided it was too much for me emotionally,\
+ go into counseling psych, but decided it was too much for me emotionally,\
  so I went into research psychology instead.\n\n\
 My psychology specialization was in psychophysics (sensation and\
  perception research), particularly around color vision. Fun fact,\
@@ -35,7 +35,7 @@ Eventually I decided to leave psychology, as the research aspect\
  loved as a kid. Programming is basically just a lot of logic\
  puzzles strung together, so it was a natural fit for me.\n\n\
 My experience with programming started after a psychology professor\
- suggested that I learn how to code. I took a pythoon course and\
+ suggested that I learn how to code. I took a python course and\
  instantly loved it. I wouuld have switched my major, but with\
  some of the unrelated general requirements within the school of\
  science and engineering at UMN there wasn\'t enough time for me to\

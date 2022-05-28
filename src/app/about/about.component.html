@@ -1,6 +1,6 @@
 <h2>{{ subtitle1 }}</h2>
 <p>{{ personalLifeSummary }}</p>
-<div style="display: flex;flex-direction: row;">
+<div style="display: flex;flex-direction: row;" scrollX="true">
 <mat-card>
     <mat-card-header>
       <mat-card-title>Tree Frog</mat-card-title>
@@ -8,20 +8,18 @@
     </mat-card-header>
     <img mat-card-xl-image src="../../assets/img/13669392_1362888097073506_7922752070585731419_o.jpg" alt="Photo of a Tree Frog">
     <mat-card-content>
-      <p>
-        I took this photo while working in the arboretum at Carleton
+      <p>I took this photo while working in the arboretum at Carleton
       </p>
     </mat-card-content>
   </mat-card>
   <mat-card>
     <mat-card-header>
-      <mat-card-title>3D Rendered Chess Pieces</mat-card-title>
+      <mat-card-title>3D Chess Pieces</mat-card-title>
       <mat-card-subtitle>3D Modeling</mat-card-subtitle>
     </mat-card-header>
     <img mat-card-xl-image src="../../assets/img/chess_pieces_by_zaelarose_debnzrb-pre.jpg" alt="Photo of 3D chess pieces">
     <mat-card-content>
-      <p>
-        This is a 3D render I made in Blender a few years ago
+      <p>This is a 3D render I made in Blender a few years ago
       </p>
     </mat-card-content>
   </mat-card>
@@ -32,8 +30,7 @@
     </mat-card-header>
     <img mat-card-xl-image src="../../assets/img/66411676_2804871652875136_1042967056179265536_o.jpg" alt="Painting of space">
     <mat-card-content>
-      <p>
-        This is a digital painting of space I made in Krita a few years ago
+      <p>This is a digital painting of space I made in Krita a few years ago
       </p>
     </mat-card-content>
   </mat-card>
@@ -44,11 +41,14 @@
     </mat-card-header>
     <img mat-card-xl-image src="../../assets/img/frosty_pullcart_by_zaelarose_ded2jr7-fullview.jpg" alt="Photo of a snowy pullcart">
     <mat-card-content>
-      <p>
-        This is a vector drawinng of a pullcart I made a few years ago in Gravit Design
+      <p>This is a vector drawinng of a pullcart I made a few years ago in Gravit Design
       </p>
     </mat-card-content>
   </mat-card>
 </div>
 <h2>{{ subtitle2 }}</h2>
 <p>{{ workExperienceSummary }}</p>
+
+<ng-template>
+  <!-- mat-card here -->
+</ng-template>

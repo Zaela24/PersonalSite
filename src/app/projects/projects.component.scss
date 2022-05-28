@@ -1,10 +1,11 @@
 $medium-spacing: 1.5rem;
 $small-spacing: 1rem;
 
-
 img {
-    padding-left: $medium-spacing;
-    padding-bottom: $medium-spacing;
+    object-fit: scale-down;
+    // border: 1px solid rgb(15, 14, 14);
+    // border-radius: 10rem;
+    padding-bottom: $small-spacing;
 }
 
 mat-card-content  {
@@ -13,6 +14,7 @@ mat-card-content  {
 
 mat-card {
     margin: $small-spacing;
+    border-radius: $small-spacing;
 }
 
   p {
