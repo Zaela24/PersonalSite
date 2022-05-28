@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    // background-color: lightgreen;
+    background-color: rgb(29, 30, 43);
 }
 @import '~@angular/material/theming';
 @include mat-core();
@@ -18,14 +18,23 @@ body {
 
 
 
-@include angular-material-theme($theme);
+// @include angular-material-theme($theme);
 
 $dark-primary: mat-palette($mat-gray,900);
 $dark-accent: mat-palette($mat-gray,800);
 
+
 $dark-theme: mat-dark-theme($dark-primary, $dark-accent);
 
-.material-dark-theme {
+// .material-dark-theme {
     @include angular-material-theme($dark-theme);
-  }
+//   }
 
+
+
+p {
+    color: lightgray;
+}
+h2 {
+    color: rgb(232, 230, 230);
+}

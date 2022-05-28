@@ -7,10 +7,17 @@ p {
     white-space: pre-wrap;
 }
 
-img {
-    padding-left: 1.5rem;
-}
-
 mat-card {
     margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.crop-image {
+    object-fit: scale-down;
+}
+
+img {
+    object-fit: cover;
+    border: 1px solid rgb(15, 14, 14);
+    border-radius: 0.5rem;
 }
