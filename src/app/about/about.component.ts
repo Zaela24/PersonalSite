@@ -6,6 +6,7 @@ import { LightboxComponent } from '../core/lightbox/lightbox.component';
 
 export interface DialogData {
   photos: ArtCards[]
+  mainPhoto: ArtCards
 }
 
 @Component({
@@ -111,15 +112,10 @@ I was one of the main drivers for the UI, and would often fix mistakes\
 
   constructor(public dialog: MatDialog) { }
 
-  openDialog(): void {
+  openDialog(index: number): void {
     const dialogRef = this.dialog.open(LightboxComponent, {
       width: '80vw',
-      data: {photos: this.cards},
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      // this.animal = result;
+      data: {photos: this.cards, mainPhoto: this.cards[index]},
     });
   }
 
