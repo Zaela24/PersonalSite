@@ -1,6 +1,12 @@
 import { getLocaleMonthNames } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ArtCards } from '../core/models/art-cards';
+import {MatDialog} from '@angular/material/dialog';
+import { LightboxComponent } from '../core/lightbox/lightbox.component';
+
+export interface DialogData {
+  photos: ArtCards[]
+}
 
 @Component({
   selector: 'app-about',
@@ -103,7 +109,19 @@ I was one of the main drivers for the UI, and would often fix mistakes\
     },
   ]
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(LightboxComponent, {
+      width: '80vw',
+      data: {photos: this.cards},
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      // this.animal = result;
+    });
+  }
 
   ngOnInit(): void {
   }
