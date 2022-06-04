@@ -105,7 +105,7 @@ I was one of the main drivers for the UI, and would often fix mistakes\
       subtitle: '2D Vector Art',
       img: '../../assets/img/frosty_pullcart_by_zaelarose_ded2jr7-fullview.jpg',
       alt: 'Drawing of a pullcart with snow',
-      description: 'This is a vector drawinng of a pullcart I made a few years ago in Gravit Design'
+      description: 'This is a vector drawing of a pullcart I made a few years ago in Gravit Design'
     },
   ]
 
