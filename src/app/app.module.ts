@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,8 @@ import { MatListModule } from '@angular/material/list';
 import { HeaderComponent } from './core/header/header.component';
 import { MatCardModule } from '@angular/material/card';
 import { ProjectsComponent } from './projects/projects.component';
+import { LightboxComponent } from './core/lightbox/lightbox.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -23,9 +26,11 @@ import { ProjectsComponent } from './projects/projects.component';
     HeaderComponent,
     AboutComponent,
     ProjectsComponent,
+    LightboxComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     MatToolbarModule,
     MatTabsModule,
@@ -35,7 +40,8 @@ import { ProjectsComponent } from './projects/projects.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
