@@ -1,0 +1,18 @@
+<div mat-dialog-content style="background-color: black;">
+    <div class="mainphoto-container">
+    <p> </p>
+        <img style="width: 90%; margin: auto; object-fit: cover;" class="main-photo" src={{mainphoto.img}} alt={{mainphoto.alt}}>
+        <p class="caption">{{ mainphoto.description }}</p>
+    </div>
+    <div mat-dialog-actions>
+
+        <a class="prev" (click)="moveSlide(-1)">&#10094;</a>
+        <a class="next" (click)="moveSlide(1)">&#10095;</a>
+    </div>
+
+    <div class="ribbon-container">
+        <div *ngFor="let photo of data.photos">
+            <img class="thumbnail" src={{photo.img}} alt={{photo.alt}} (click)="activate(photo)">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+.mainphoto-container {
+    width: 100%;
+    // height: 40vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.mainphoto {
+    height: 50vh;
+    margin: auto;
+}
+
+.caption {
+    margin-left: 5%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position:absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+.next {
+    right: 11%;
+    border-radius: 3px 0 0 3px;
+}
+
+.ribbon-container {
+}
+
+.thumbnail {
+    float: left;
+    width: 23%;
+    height: 10vh;
+    margin: 1%;
+    object-fit:cover;
+}
