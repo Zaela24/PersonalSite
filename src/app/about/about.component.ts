@@ -114,8 +114,9 @@ I was one of the main drivers for the UI, and would often fix mistakes\
 
   openDialog(index: number): void {
     const dialogRef = this.dialog.open(LightboxComponent, {
-      width: '80vw',
+      width: '70%',
       data: {photos: this.cards, mainPhoto: this.cards[index]},
+      panelClass: 'dialog-container',
     });
   }
 

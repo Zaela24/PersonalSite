@@ -12,6 +12,8 @@ export class LightboxComponent {
 
   mainphoto: ArtCards = this.data.mainPhoto
 
+  mouseEntered: boolean = false
+
   activate(photo: ArtCards): void {
     this.mainphoto = photo
   }
@@ -25,6 +27,14 @@ export class LightboxComponent {
       index = -1
     }
     this.mainphoto = this.data.photos[index + direction]
+  }
+
+  onMouseEnter() {
+    this.mouseEntered = true
+  }
+
+  onMouseLeave() {
+    this.mouseEntered = false
   }
 
   constructor(
