@@ -8,7 +8,7 @@
     </div>
     <div class="ui-controls ribbon-container-hidden">
         <div *ngFor="let photo of data.photos">
-            <img class="thumbnail" src={{photo.img}} alt={{photo.alt}} (click)="activate(photo)">
+            <img [ngClass]="photo == mainphoto ? 'thumbnail active' : 'thumbnail'" src={{photo.img}} alt={{photo.alt}} (click)="activate(photo)">
         </div>
     </div>
     <a class="ui-controls prev" (click)="moveSlide(-1)">&#10094;</a>
