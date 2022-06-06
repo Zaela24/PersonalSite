@@ -1,18 +1,16 @@
-<div mat-dialog-content style="background-color: black;">
-    <div class="mainphoto-container">
-    <p> </p>
-        <img style="width: 90%; margin: auto; object-fit: cover;" class="main-photo" src={{mainphoto.img}} alt={{mainphoto.alt}}>
+<div id="dialog-wrapper" mat-dialog-content (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+    <div class="ui-controls">
+        <h2>{{ mainphoto.title }}</h2>
+    </div>
+    <div class="test mainphoto-container">
+        <img class="mainphoto" src={{mainphoto.img}} alt={{mainphoto.alt}}>
         <p class="caption">{{ mainphoto.description }}</p>
     </div>
-    <div mat-dialog-actions>
-
-        <a class="prev" (click)="moveSlide(-1)">&#10094;</a>
-        <a class="next" (click)="moveSlide(1)">&#10095;</a>
-    </div>
-
-    <div class="ribbon-container">
+    <div class="ui-controls ribbon-container-hidden">
         <div *ngFor="let photo of data.photos">
-            <img class="thumbnail" src={{photo.img}} alt={{photo.alt}} (click)="activate(photo)">
+            <img [ngClass]="photo == mainphoto ? 'thumbnail active' : 'thumbnail'" src={{photo.img}} alt={{photo.alt}} (click)="activate(photo)">
         </div>
     </div>
+    <a class="ui-controls prev" (click)="moveSlide(-1)">&#10094;</a>
+    <a class="ui-controls next" (click)="moveSlide(1)">&#10095;</a>
 </div>

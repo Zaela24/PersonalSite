@@ -38,3 +38,13 @@ p {
 h2 {
     color: rgb(232, 230, 230);
 }
+
+.mat-dialog-container {
+    background-color: black;
+    border-radius: 1rem;
+    visibility: hidden;
+}
+
+.mat-dialog-container * {
+    visibility: visible;
+}

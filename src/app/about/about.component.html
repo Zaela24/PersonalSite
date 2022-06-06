@@ -3,12 +3,12 @@
 <h2>{{ subtitle1 }}</h2>
 <p>{{ personalLifeSummary }}</p>
 <div class="scroll-container">
-    <mat-card *ngFor="let card of cards">
+    <mat-card *ngFor="let card of cards; index as i">
       <mat-card-header>
         <mat-card-title>{{ card.title }}</mat-card-title>
         <mat-card-subtitle>{{ card.subtitle }}</mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-xl-image src={{card.img}} alt={{card.alt}} (click)="openDialog()">
+      <img mat-card-xl-image src={{card.img}} alt={{card.alt}} (click)="openDialog(i)">
       <mat-card-content>
         <p>{{ card.description }}</p>
       </mat-card-content>
