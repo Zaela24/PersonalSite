@@ -1,11 +1,42 @@
-<mat-card>
+<div class="grid-container">
+
+<mat-card class="item1">
+    <mat-card-content>
+      <h1>Zaela Rose</h1>
+      <a href="https://www.w3schools.com/css/css3_gradients.asp"><h2>LinkedIn | GitHub | Email</h2></a>
+      <div *ngFor="">
+        <h3>{{ company }} - {{ jobTitle }}</h3>
+        <h4>{{ startDate }} - {{ endDate }}</h4>
+        <ul *ngFor="">
+          <li>{{ jobFunction }}</li>
+        </ul>
+      </div>
+
+      <p>test</p>
+      <a href="https://play.google.com/store/apps/details?id=com.zaelaapps.TappyPathogen&gl=US">Tappy Pathogen in the Play Store</a>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="item3">
+    <mat-card-header>
+      <mat-card-title>Navigation</mat-card-title>
+      <mat-card-subtitle>Some Subtitle</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-md-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+      </p>
+    </mat-card-content>
+  </mat-card>
+  <div class="item2">
+    <mat-card>
     <mat-card-header>
       <mat-card-title>Tappy Pathogen</mat-card-title>
       <mat-card-subtitle>Android Game</mat-card-subtitle>
     </mat-card-header>
     <div>
-        <img mat-card-xl-image src="../../assets/img/tappypathogen1.webp" alt="Photo of a Shiba Inu">
-        <img mat-card-xl-image src="../../assets/img/tappypathogen2.webp" alt="Photo of a Shiba Inu">
+        <img mat-card-md-image src="../../assets/img/tappypathogen1.webp" alt="Photo of a Shiba Inu">
+        <img mat-card-md-image src="../../assets/img/tappypathogen2.webp" alt="Photo of a Shiba Inu">
     </div>
     <mat-card-content>
       <p>
@@ -17,12 +48,12 @@
       <a href="https://play.google.com/store/apps/details?id=com.zaelaapps.TappyPathogen&gl=US">Tappy Pathogen in the Play Store</a>
     </mat-card-content>
   </mat-card>
-  <mat-card>
+    <mat-card>
     <mat-card-header>
       <mat-card-title>Example</mat-card-title>
       <mat-card-subtitle>Some Subtitle</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <img mat-card-md-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
     <mat-card-content>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
@@ -41,3 +72,31 @@
       </p>
     </mat-card-content>
   </mat-card>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Example</mat-card-title>
+      <mat-card-subtitle>Some Subtitle</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-md-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+      </p>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Example</mat-card-title>
+      <mat-card-subtitle>Some Subtitle</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-md-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+      </p>
+    </mat-card-content>
+  </mat-card>
+  </div>
+  
+
+</div>
