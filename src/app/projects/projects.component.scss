@@ -22,6 +22,7 @@ mat-card {
     top:2%;
     position: sticky;
     margin-top: 5%;
+    // width: 15em;
 }
 
 // h4, h3 {
@@ -70,10 +71,12 @@ mat-card {
 
 .grid-container {
     display: grid;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
     grid-template-areas:
-        'resume main main navigation'
-        'resume main main navigation'
-        // 'blank main main blank'
+        'resume main main main navigation'
+        'resume main main main navigation';
+    margin: auto;
 }
 
 .projects-container {
