@@ -2,10 +2,10 @@ $medium-spacing: 1.5rem;
 $small-spacing: 1rem;
 
 img {
-    object-fit: scale-down;
-    // border: 1px solid rgb(15, 14, 14);
-    // border-radius: 10rem;
-    padding-bottom: $small-spacing;
+    object-fit:fill;
+    border: 1px solid rgb(15, 14, 14);
+    border-radius: 10px;
+    margin: 0.25rem;
 }
 
 mat-card-content  {
@@ -13,10 +13,71 @@ mat-card-content  {
 }
 
 mat-card {
-    margin: $small-spacing;
+    margin: 3%;
     border-radius: $small-spacing;
+    // background-color: rgb(14, 1, 21);
+}
+
+.item1, .item3 {
+    top:2%;
+    position: sticky;
+    margin-top: 5%;
+    // width: 15em;
+}
+
+// h4, h3 {
+//     margin: 0;
+//     padding: 0;
+//     background: linear-gradient(to right, rgb(5, 242, 163), rgb(235, 252, 2));
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+
+// h2 {
+//     margin: 0;
+//     padding: 5px;
+//     background: linear-gradient(to right, rgb(0, 255, 60), rgb(2, 227, 252));
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+
+// h1 {
+//     margin: 0;
+//     padding: 0;
+//     background: linear-gradient(to bottom right, rgb(218, 5, 242), rgb(252, 185, 2));
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+
+.item1 {
+    grid-area:resume;
+    margin-left: 5%;
+    height: fit-content;
+}
+
+.item2 {
+    grid-area: main;
+}
+
+.item3 {
+    grid-area: navigation;
+    margin-right: 5%;
+    height: fit-content;
 }
 
   p {
       white-space: pre-wrap !important
   }
+
+.grid-container {
+    display: grid;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    grid-template-areas:
+        'resume main main main navigation'
+        'resume main main main navigation';
+    margin: auto;
+}
+
+.projects-container {
+}
